@@ -10,6 +10,7 @@
         android:layout_height="wrap_content"
         android:text="number one"/>
     <EditText
+        android:inputType="number"
         android:id="@+id/one"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -19,6 +20,7 @@
         android:layout_height="wrap_content"
         android:text="number two"/>
     <EditText
+        android:inputType="number"
         android:id="@+id/two"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -27,5 +29,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="add"/>
+    <EditText
+        android:visibility="gone"
+        android:editable="false"
+        android:id="@+id/results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
 
 </LinearLayout>

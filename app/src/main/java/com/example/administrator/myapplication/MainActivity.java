@@ -27,6 +27,13 @@ EditText ed1,ed2;
            public void onClick(View view) {
                getUsername=ed1.getText().toString();
                getPassword=ed2.getText().toString();
+               if (getUsername.equals("mzc") && getPassword.equals("college"))
+               {
+                   Intent e = new Intent(getApplicationContext(),welcomActivity.class);
+                   e.putExtra("sid",getUsername);
+                   e.putExtra("pswd",getPassword);
+                   startActivity(e);
+               }
                Toast.makeText(getApplicationContext(),getUsername,Toast.LENGTH_LONG).show();
                Toast.makeText(getApplicationContext(),getPassword,Toast.LENGTH_LONG).show();
 //               Toast.makeText(getApplicationContext(),"hello",Toast.LENGTH_LONG).show();

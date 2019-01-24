@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string-array name="degreelist">
+        <item>BCA</item>
+        <item>Bsc</item>
+        <item>MCA</item>
+        <item>Msc</item>
+    </string-array>
 </resources>
